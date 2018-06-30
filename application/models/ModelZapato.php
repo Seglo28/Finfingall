@@ -17,4 +17,18 @@ class ModelZapato extends CI_Model {
         return $this->db->insert($this->table, $popodevaca);
     }
 
+    public function selectShoes($idZapato){
+        $this->db->select('*');
+        $this->db->from($this->table);
+        $this->db->where($this->id, $idZapato);
+
+        $result = $this->db->get();
+
+        return $result->row();
+    }
+
+    public function searchMarca($busqueda){
+        
+    }
+
 }

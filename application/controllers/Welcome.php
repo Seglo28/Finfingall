@@ -42,7 +42,18 @@ class Welcome extends CI_Controller {
 		} else {
 			echo 'No se logro insertar';
 		}
+	}
 
+	public function verZapato($idZapato){
+		$this->output->set_content_type('application/json'); //decorador para formatear la salida
+		
+		
+		$salida = $this->mzapato->selectShoes($idZapato);
 
+		if(is_null($salida)){ //si es nuelo, entonces imprime un objecto vacio
+			$salida = new stdClass();
+		}
+		
+		echo json_encode($salida);
 	}
 }
