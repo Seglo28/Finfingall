@@ -13,4 +13,8 @@ class ModelZapato extends CI_Model {
         return $this->db->get($this->table)->result();
     }
 
+    public function addShoes($popodevaca) {
+        return $this->db->insert($this->table, $popodevaca);
+    }
+
 }
