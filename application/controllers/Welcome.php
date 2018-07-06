@@ -58,4 +58,6 @@ class Welcome extends CI_Controller {
 	}
 
 	//pruebo la consola
+
+	//PRUEBO PARA VER SI CAPTE LA COSA DE AÑADIR CAMBIOS A LA NUBE, ES DECIR GITHUB DESDE LA CONSOLA
 }
