@@ -56,4 +56,6 @@ class Welcome extends CI_Controller {
 		
 		echo json_encode($salida);
 	}
+
+	//pruebo la consola
 }
